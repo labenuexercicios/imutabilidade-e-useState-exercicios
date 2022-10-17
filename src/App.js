@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import styled, {createGlobalStyle} from 'styled-components'
+import React, { useState } from 'react'
+import styled, { createGlobalStyle } from 'styled-components'
 import PokemonCard from './Components/PokemonCard/PokemonCard';
 
 const GlobalStyles = createGlobalStyle`
@@ -23,18 +23,33 @@ function App() {
     image: 'https://archives.bulbagarden.net/media/upload/thumb/b/b9/172Pichu.png/250px-172Pichu.png',
     id: 0
   })
-
-  // Para fazer seus próximos pokemons, crie novos estados!
-
-  return ( <>
-  <GlobalStyles/>
+  const [pokemon1, setPokemon1] = useState({
+    name: "Bulbassauro",
+    type: "planta",
+    evolved: false,
+    weight: 3,
+    color: 'verde',
+    image: 'https://archives.bulbagarden.net/media/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png',
+    id: 0
+  })
+  return (<>
+    <GlobalStyles />
     <FlexContainer>
-      {/* Aqui neste componente, passe as props. Lembre-se que também é possivel passar a função de setState via props! */}
-      <PokemonCard/>
-      {/* Crie aqui seus próximos pokemons! */}
+      <PokemonCard
+        pokemon={pokemon}
+        setPokemon={setPokemon}
+      />
+      <PokemonCard
+        pokemon={pokemon1}
+        setPokemon={setPokemon1}
+      />
+      <PokemonCard
+        pokemon={pokemon1}
+        setPokemon={setPokemon1}
+      />
     </FlexContainer>
   </>
-    
+
   );
 }
 
