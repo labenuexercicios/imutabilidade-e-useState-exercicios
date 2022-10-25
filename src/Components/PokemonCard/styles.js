@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Main = styled.main`
+    display: flex;
+    flex-direction: row;
+`
+
 export const Card = styled.div`
   background-color: ${(props) => props.color};
   border: 1px solid black;
@@ -8,6 +13,7 @@ export const Card = styled.div`
   text-align: center;
   border-radius: 10px;
   box-shadow: 10px 10px 30px #bdbdbd;
+  width: 290px;
 `;
 
 export const PokemonName = styled.h2`
