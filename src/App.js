@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import styled, {createGlobalStyle} from 'styled-components'
 import PokemonCard from './Components/PokemonCard/PokemonCard';
+// import imge from '../public/pichu.png'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -20,7 +21,7 @@ function App() {
     evolved: false,
     weight: 2,
     color: 'yellow',
-    image: 'https://archives.bulbagarden.net/media/upload/thumb/b/b9/172Pichu.png/250px-172Pichu.png',
+    image: 'https://archives.bulbagarden.net/media/upload/archive/f/f3/20130810070434%210172Pichu.png',
     id: 0
   })
 
@@ -30,7 +31,18 @@ function App() {
   <GlobalStyles/>
     <FlexContainer>
       {/* Aqui neste componente, passe as props. Lembre-se que também é possivel passar a função de setState via props! */}
-      <PokemonCard/>
+      <PokemonCard
+      nome = {pokemon.name}
+      tipo = {pokemon.type}
+      evolucao = {pokemon.evolved}
+      peso = {pokemon.weight}
+      cor = {pokemon.color}
+      imagem = {pokemon.image}
+      id = {pokemon.id}
+      setPokemon = {setPokemon}
+      
+      />
+
       {/* Crie aqui seus próximos pokemons! */}
     </FlexContainer>
   </>
