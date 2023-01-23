@@ -13,12 +13,14 @@ export const Card = styled.div`
 export const PokemonName = styled.h2`
     border-top: 2px solid black;
     padding: 0.5rem 0;
+    background-color: azure;
 `
 
 export const PokemonType = styled.p`
     font-weight: bold;
     text-transform: capitalize;
     padding: 0.5rem 0;
+    background-color: goldenrod
 `
 export const EvolveButton = styled.button`
     padding: 0.5rem;
@@ -27,5 +29,7 @@ export const EvolveButton = styled.button`
     border: none;
     cursor: pointer;
     box-shadow: 0 6px 30px -10px #000000;
+    color: goldenrod;
+    background-color: bisque;
 
 `
