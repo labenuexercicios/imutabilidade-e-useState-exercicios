@@ -10,8 +10,8 @@ export const Card = styled.div`
   box-shadow: 10px 10px 30px #bdbdbd;
 
   img {
-    width: 35vh;
-    height: 35vh;
+    width: 20vh;
+    height: 20vh;
   }
 `;
 

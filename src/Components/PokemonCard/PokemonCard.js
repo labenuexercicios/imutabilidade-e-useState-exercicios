@@ -7,9 +7,9 @@ import {Card, PokemonName, PokemonType, EvolveButton} from './styles'
 const PokemonCard = (props) => {
 
 
-const {setPokemon, Pokemon, Pikachu ,Bulbasaur, setBulbasaur, Venosaur}=props  
+const {setPokemon, Pokemon, Pikachu }=props  
 
-const {name,type,evolved,weight,color,image,id} = Bulbasaur
+const {name,type,evolved,weight,color,image,id} = Pokemon
 
 
 
@@ -19,7 +19,7 @@ const {name,type,evolved,weight,color,image,id} = Bulbasaur
 
 const evoluirPokemon = () => {
   setPokemon(Pikachu)
-  setBulbasaur(Venosaur)
+
 
 }
 

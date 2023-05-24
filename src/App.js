@@ -65,7 +65,8 @@ function App() {
       <GlobalStyles />
       <FlexContainer>
         {/* Aqui neste componente, passe as props. Lembre-se que também é possivel passar a função de setState via props! */}
-        <PokemonCard Pokemon={Pokemon}Pikachu={Pikachu} setPokemon={setPokemon} Bulbasaur={Bulbasaur}setBulbasaur={setBulbasaur} Venosaur={Venosaur}  />
+        <PokemonCard Pokemon={Pokemon}Pikachu={Pikachu} setPokemon={setPokemon}  />
+        <PokemonCard Pokemon={Bulbasaur}Pikachu={Venosaur} setPokemon={setBulbasaur}  />
      
      
     
