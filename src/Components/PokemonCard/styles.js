@@ -8,6 +8,7 @@ export const Card = styled.div`
   text-align: center;
   border-radius: 10px;
   box-shadow: 10px 10px 30px #bdbdbd;
+  transition: all 0.2s ease-in-out;
 `;
 
 export const PokemonName = styled.h2`
